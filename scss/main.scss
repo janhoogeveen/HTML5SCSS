@@ -1,0 +1,51 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles
+   ========================================================================== */
+@import 'inc/boilerplate';
+
+/* ==========================================================================
+   Normalize stylesheets
+   ========================================================================== */
+@import 'inc/normalize';
+
+/* ==========================================================================
+   Type your own styles here, or import them via another include
+   ========================================================================== */
+@import 'inc/classes';
+
+
+/* ==========================================================================
+   Media Queries / Internet Explorer 
+
+    Conditional styling can be achieved inline, see as a simple but totally
+    nonsensical example here
+
+    $breakpoint: 960px;
+    a {
+        display: inline-block;
+        //create a min-width media query
+        @media screen and (min-width: $breakpoint1) {
+            display: block;
+        }
+        //retina displays
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+               only screen and (min-resolution: 144dpi) {
+        }
+        //internet explorer fallback
+        .lt-ie8 & {
+            *display: inline;
+            zoom: 1;
+        }
+    }
+
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+@import 'inc/helper';
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@import 'inc/print';
