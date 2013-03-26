@@ -7,7 +7,7 @@ textarea {
 }
 
 body {
-    font-size: 1em;
+    font-size: 100%;
     line-height: 1.4;
 }
 
@@ -42,11 +42,4 @@ fieldset {
 
 textarea {
     resize: vertical;
-}
-
-.chromeframe {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
 }

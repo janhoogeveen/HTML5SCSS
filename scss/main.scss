@@ -1,37 +1,43 @@
 /* ==========================================================================
-   HTML5 Boilerplate styles
-   ========================================================================== */
-@import 'inc/boilerplate';
-
-/* ==========================================================================
    Normalize stylesheets
    ========================================================================== */
 @import 'inc/normalize';
 
 /* ==========================================================================
-   Type your own styles here, or import them via another include
+   HTML5 Boilerplate styles
+   ========================================================================== */
+@import 'inc/boilerplate';
+
+/* ==========================================================================
+   Load in Bourbon (http://bourbon.io) for super-awesome clean mixins
+   ========================================================================== */
+@import 'inc/bourbon/bourbon';
+
+/* ==========================================================================
+   Define your own styles here.
    ========================================================================== */
 @import 'inc/classes';
-
 
 /* ==========================================================================
    Media Queries / Internet Explorer 
 
-    Conditional styling can be achieved inline, see as a simple but totally
-    nonsensical example here
+    Conditional styling can be achieved inline through Scss, see a simple
+    but totally nonsensical example here
 
-    $breakpoint: 960px;
     a {
         display: inline-block;
-        //create a min-width media query
-        @media screen and (min-width: $breakpoint1) {
+        //create a min-width media query, will automatically wrap around the
+        //parent element. Gotta love reverse selectors
+        @media screen and (min-width: 100px) {
             display: block;
         }
         //retina displays
         @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
                only screen and (min-resolution: 144dpi) {
         }
-        //internet explorer fallback
+        //internet explorer fallback, note the & selector. We use it to
+        //wrap the <a> tag inside the .lt-ie8 class
+        // result --> .lt-ie8 .a {}
         .lt-ie8 & {
             *display: inline;
             zoom: 1;
@@ -41,11 +47,11 @@
    ========================================================================== */
 
 /* ==========================================================================
-   Helper classes
+   Helper classes from HTML5 boilerplate like clearfix and image replacement
    ========================================================================== */
 @import 'inc/helper';
 
 /* ==========================================================================
-   Print styles
+   Print stylesheet
    ========================================================================== */
 @import 'inc/print';
